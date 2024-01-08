@@ -4,6 +4,8 @@
 
 package daw;
 
+import java.util.Random;
+
 /**
  *
  * @author khalid
@@ -16,5 +18,17 @@ package daw;
 //método para borrar todas las caras indicadas como parámetro
 public class Dado {
 
+    public int minCaras;
+    public int maxCaras;
+
+    public Dado() {
+       
+      
+        
+
+    }
+    
+    
+    
     
 }
