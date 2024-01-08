@@ -4,7 +4,9 @@
 
 package daw;
 
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.logging.Logger;
 
 /**
  *
@@ -28,14 +30,18 @@ import java.util.Random;
 //método para borrar todas las caras indicadas
 public class Dado {
 
-    public int minCaras;
-    public int maxCaras;
+    public int lanzamientos= 1000;
+    public int minCaras= 1;
+    public int maxCaras = 6;
 
     public Dado() {
-       
-      
+       ArrayList <Integer> listaEnteros = new ArrayList<>();
+        for (int i = 0; i < lanzamientos; i++) {
+           Random random = new Random();
+          int tiradas= random.nextInt(minCaras, maxCaras + 1);
+         listaEnteros.add(i);
+        }
         
-
     }
     
     
